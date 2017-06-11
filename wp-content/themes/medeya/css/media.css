@@ -1,0 +1,127 @@
+/* XXLarge screens, min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) { } 
+
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues  */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } 
+
+
+/* XLarge screens, min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) { }
+
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+
+/* Large screens, min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { }
+
+/* max-width 1024px */
+@media only screen and (max-width: 64em) { 
+    .top_contacts_wrap {
+        display: none;
+    }
+    .page_header {
+        background-color: #4575bd;
+    }
+    .logo {
+        color: #FFF;
+    }
+    .logo_img {
+        display: none;
+    }
+    .logo_img_white {
+        display: inline-block;
+    }
+    .main_menu {
+        display: none;
+    }
+    .mobile_main_menu_btn {
+        display: inline-block;
+    }
+    .certificate_wrap {
+        text-align: center;
+    }
+    .certificate_wrap {
+        margin-bottom: 30px;
+    }
+}
+/* max-width 768px */
+@media only screen and (max-width: 48em) {
+    .our_services_img_wrap {
+        text-align: center;
+    }
+    .doc_avatar_wrap {
+        text-align: center;
+    }
+    .reviews .sm_reviev {
+        width: 100%;
+    }
+    .review_wrap {
+        margin-bottom: 30px;
+    }
+    .partner_item {
+        text-align: center;
+        width: 100%;
+    }
+}
+/* max-width 641 */
+@media only screen and (max-width: 40.063em) {
+    .section_padd {
+        padding: 30px 0;
+    }
+    .clinic_img_wrap {
+        margin-bottom: 15px;
+    }
+    .doc_avatar_wrap .doc_avatar {
+        width: 100%;
+    }
+    .doc_single {
+        padding: 0 0 20px 0;
+    }
+    .footer_contacts_list {
+        width: 60%;
+    }
+    .button-up {
+        bottom: 40px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .button-up i {
+        line-height: 36px;
+        font-size: 13px;
+    }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+}
+
+
+/* Medium screens, min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { }
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) { }
+
+
+/* Small screens, Define mobile styles */
+@media only screen { }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
