@@ -32,7 +32,7 @@
 
                         <?php if( have_rows('footer_link_repeater', 'option') ): ?>
                             <ul class="footer_doctor_list">
-                                <?php while( have_rows('footer_link_repeater', 'option') ): the_row(); 
+                                <?php while( have_rows('footer_link_repeater', 'option') ): the_row();
                                 // vars
                                 $footer_link_text = get_sub_field('footer_link_text', 'option');
                                 $footer_link = get_sub_field('footer_link', 'option');
@@ -55,18 +55,18 @@
                             </ul>
                         <?php endif; ?>
                     </div>
-                    
+
                     <div class="columns small-12 medium-4 large-4">
                         <p class="footer_col_title"><?php the_field('footer_col_title_3', 'option'); ?></p>
 
                         <?php if( have_rows('footer_link_repeater_2', 'option') ): ?>
                             <ul class="footer_services_list">
-                                <?php while( have_rows('footer_link_repeater_2', 'option') ): the_row(); 
+                                <?php while( have_rows('footer_link_repeater_2', 'option') ): the_row();
                                     // vars
                                     $footer_link_text_2 = get_sub_field('footer_link_text_2', 'option');
                                     $footer_link_2 = get_sub_field('footer_link_2', 'option');
 
-                                ?>  
+                                ?>
                                     <li class="footer_service">
 
                                         <?php if( $footer_link_2 ): ?>
@@ -81,7 +81,7 @@
                                     </li>
                                 <?php endwhile; ?>
                             </ul>
-                        <?php endif; ?> 
+                        <?php endif; ?>
 
                     </div>
                 </div>
@@ -94,15 +94,15 @@
                     </div>
                 </div>
             </div>
-            
+
         </footer>
         <!-- Page Footer End -->
-            
+
         <div id="button-up" class="button-up">
            <i class="fa fa-chevron-up" aria-hidden="true"></i>
         </div>
 
-        
+
     </div>
     <!-- Main Wrap End -->
     <?php wp_footer(); ?>

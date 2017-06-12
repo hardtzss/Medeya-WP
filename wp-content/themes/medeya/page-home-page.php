@@ -13,8 +13,8 @@ Template Name: Home
 	<section class="main_slider_wrap">
 
 		<?php if( have_rows('main_slider_repeater') ): ?>
-			<div id="main_slider" class="main_slider">	
-				<?php while( have_rows('main_slider_repeater') ): the_row(); 
+			<div id="main_slider" class="main_slider">
+				<?php while( have_rows('main_slider_repeater') ): the_row();
 
 				// vars
 				$main_slider_img = get_sub_field('main_slider_img');
@@ -34,7 +34,7 @@ Template Name: Home
 						</div>
 					</div>
 
-				<?php endwhile; ?>		
+				<?php endwhile; ?>
 			</div>
 		<?php endif; ?>
 
@@ -46,21 +46,20 @@ Template Name: Home
 		<div class="row">
 
 			<div class="columns small-12 medium-12 large-12">
-				<p class="section_theme"><?php the_field('first_clinic_title'); ?></p>
-				<h3 class="section_title"><?php the_field('second_clinic_title'); ?></h3>
+				<h3 class="section_title"><?php the_field('clinic_title'); ?></h3>
 			</div>
 
 			<div class="columns small-12 medium-6 large-5">
 				<div style="background-image: url('<?php the_field('clinic_section_img'); ?>')" class="cover clinic_img img_pab" alt="1"></div>
 			</div>
-			
+
 			<div class="columns small-12 medium-6 large-7">
-				<h4 class="section_subtitle"><?php the_field('third_clinic_title'); ?></h4>
+				<h4 class="section_subtitle"><?php the_field('clinic_title_2'); ?></h4>
 				<p class="def_content"><?php the_field('section_clinic_content'); ?></p>
 			</div>
 
 		</div>
-	</section>	
+	</section>
 	<!-- Medical Clinic -->
 
 	<!-- Our Services -->
@@ -69,8 +68,7 @@ Template Name: Home
 			<div class="columns small-12 medium-12 large-12">
 
 				<div class="our_services_title_wrap">
-					<p class="section_theme"><?php the_field('services_first_title'); ?></p>
-					<h3 class="section_title"><?php the_field('services_second_title'); ?></h3>
+					<h3 class="section_title"><?php the_field('services_title'); ?></h3>
 					<div class="slider_arrows_wrap">
 						<div class="slider_btn_prev trans">
 							<i class="fa fa-arrow-left slide_control trans" aria-hidden="true"></i>
@@ -80,7 +78,7 @@ Template Name: Home
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 
 			<div class="columns small-12 medium-12 large-12">
@@ -88,14 +86,14 @@ Template Name: Home
 			<?php if( have_rows('services_slide_repeater') ): ?>
 				<div id="services_slider" class="services_slider">
 
-					<?php while( have_rows('services_slide_repeater') ): the_row(); 
+					<?php while( have_rows('services_slide_repeater') ): the_row();
 
 					// vars
 					$serv_slide_img = get_sub_field('serv_slide_img');
 					$serv_slide_title = get_sub_field('serv_slide_title');
 					$serv_slide_content = get_sub_field('serv_slide_content');
 
-					?>		
+					?>
 							<div class="slide">
 								<div class="slide_inner">
 									<div class="our_services_img_wrap">
@@ -122,12 +120,11 @@ Template Name: Home
 		<div class="row">
 
 			<div class="columns small-12 medium-12 large-8">
-				<p class="section_theme"><?php the_field('doc_sec_first_title'); ?></p>
-				<h3 class="section_title"><?php the_field('doc_sec_second_title'); ?></h3>
+				<h3 class="section_title"><?php the_field('doc_sec_title'); ?></h3>
 				<div class="row">
 
-				<div class="new_query">    
-                <?php 
+				<div class="new_query">
+                <?php
 
                 $arg = array(
                     'post_type'     => 'doctors_page',
@@ -139,11 +136,11 @@ Template Name: Home
                 if ( $the_query->have_posts() ) : ?>
                     <div id="post-type" class="post-type">
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?><!-- BEGIN of Post -->
-                            
+
                             <div class="columns small-12 medium-6 large-4 docs_m">
                                 <div class="doctor_item_wrap">
                                     <div class="doc_avatar_wrap">
-                                    	
+
                                     	<a href="<?php the_permalink(); ?>">
 
                                     		<div style="background-image: url('<?php the_field('p_doc_photo'); ?>')" class="cover doc_avatar img_pab" alt="1">
@@ -178,24 +175,23 @@ Template Name: Home
 							<i class="fa fa-long-arrow-right show_all_doctors_icon" aria-hidden="true"></i>
 						</div>
 					</div>
-					
+
 				</div>
 
 			</div>
 
 			<div class="columns small-12 medium-12 large-4">
 				<div class="row">
-					
+
 					<div class="columns small-12 medium-12 large-12">
-						<p class="section_theme"><?php the_field('doc_sec_third_title'); ?></p>
-						<h3 class="section_title"><?php the_field('doc_sec_fourth_title'); ?></h3>
+						<h3 class="section_title"><?php the_field('doc_sec_title_2'); ?></h3>
 					</div>
 
 					<div class="columns small-12 medium-12 large-12">
 
 						<?php if( have_rows('sertific_repeater') ): ?>
 
-							<?php while( have_rows('sertific_repeater') ): the_row(); 
+							<?php while( have_rows('sertific_repeater') ): the_row();
 							// vars
 							$sertificate_img = get_sub_field('sertificate_img');
 							?>
@@ -214,7 +210,7 @@ Template Name: Home
 		</div>
 	</section>
 	<!-- Our Doctors End -->
-	
+
 	<!-- Reviews -->
 	<section style="background-image: url('<?php the_field('review_sec_bg'); ?>')" class="reviews cover parallax">
 
@@ -224,8 +220,7 @@ Template Name: Home
 				<div class="columns small-12 medium-12 large-12">
 
 					<div class="reviews_title_wrap">
-						<p class="section_theme"><?php the_field('review_first_title'); ?></p>
-						<h3 class="section_title"><?php the_field('review_second_title'); ?></h3>
+						<h3 class="section_title"><?php the_field('review_title'); ?></h3>
 					</div>
 
 				</div>
@@ -295,7 +290,7 @@ Template Name: Home
 
 			</div>
 		</div>
-		
+
 	</section>
 	<!-- Reviews End -->
 
@@ -310,7 +305,7 @@ Template Name: Home
 
 				<?php if( have_rows('partner_repeater') ): ?>
 
-					<?php while( have_rows('partner_repeater') ): the_row(); 
+					<?php while( have_rows('partner_repeater') ): the_row();
 						// vars
 						$partner_img = get_sub_field('partner_img');
 						?>
@@ -327,7 +322,7 @@ Template Name: Home
 		</div>
 	</section>
 	<!-- Partners End -->
-	
+
 </div>
 <!-- Content End -->
 
