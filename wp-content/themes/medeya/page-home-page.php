@@ -12,6 +12,36 @@ Template Name: Home
 	<!-- Main Slider -->
 	<section class="main_slider_wrap">
 
+		<form class="select-form">
+
+            <div class="select-form__inner">
+                <p class="select-form__title">
+                    Title
+                </p>
+                <select class="select select-form__select">
+                    <option class="select__item" value="value">Select item 1</option>
+                    <option class="select__item" value="value">Select item 2</option>
+                    <option class="select__item" value="value">Select item 3</option>
+                </select>
+            </div>
+
+            <div class="select-form__inner">
+                <p class="select-form__title">
+                    Title
+                </p>
+
+                <select class="select select-form__select">
+                    <option class="select__item" value="value">Select item 1</option>
+                    <option class="select__item" value="value">Select item 2</option>
+                    <option class="select__item" value="value">Select item 3</option>
+                </select>
+            </div>
+
+            <div class="select-form__inner">
+                <button class="select-form__btn" type="submit">Button</button>
+            </div>
+        </form>
+
 		<?php if( have_rows('main_slider_repeater') ): ?>
 			<div id="main_slider" class="main_slider">
 				<?php while( have_rows('main_slider_repeater') ): the_row();

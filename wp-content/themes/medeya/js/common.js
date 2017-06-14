@@ -21,7 +21,7 @@ $(function() {
 		arrows: false,
 		dots: false,
 		responsive: [
-		
+
 		{
 			breakpoint: 768,
 			settings: {
@@ -47,7 +47,7 @@ $(function() {
 	$('.slider_btn_next').click(function(){
 		$("#services_slider").slick('slickNext');
 	});
-	
+
 
 	// Parallax
 	$('.parallax-window').parallax({imageSrc: 'img/parallax.jpg'});
@@ -107,14 +107,16 @@ $(function() {
     var options = {
     	offset: 500
     };
-        
+
 	// Headhesive destroy
 	if ($(window).width() <= '1024'){
 		top_main_menu.destroy();
 	};
 
+	// Select 2
+	$('.select-form__select').select2();
 
 
-	
+
+
 });
-

@@ -41,6 +41,7 @@
     18. About Clinic
     19. Hovers
     20. Page 404
+    21. Select 2
 ========================================*/
 
 /*======================================
@@ -1083,4 +1084,67 @@ div.wpcf7-response-output {
     display: inline;
     color: #fff;
     font-weight: bold;
+}
+/*======================================
+    21. Select 2
+========================================*/
+/* Select Form */
+.select-form {
+	background-color: #DEDEDE;
+	max-width: 350px;
+	padding: 20px;
+}
+.select {}
+.select-form__inner {
+	margin-bottom: 15px;
+}
+.select-form__title {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.select-form__select {}
+.select-form__btn {
+	display: block;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 16px;
+	margin: 0 auto;
+}
+.select__item {}
+
+
+/* Custom Select */
+.select2-container--default
+.select2-selection--single {
+    height: 40px;
+}
+.select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
+	line-height: 40px;
+}
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow b {
+	border-color: #888 transparent transparent transparent;
+}
+.select2-container--default.select2-container--open
+.select2-selection--single
+.select2-selection__arrow b {
+    border-color: transparent transparent #888 transparent;
+}
+.select2-container--default
+.select2-selection--single {
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }

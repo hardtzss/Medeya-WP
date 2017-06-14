@@ -13,9 +13,9 @@
 
     // ACF options
     if( function_exists('acf_add_options_page') ) {
-    
+
         acf_add_options_page();
-    
+
     }
     // Custom menu reg
     // register_nav_menus(array(
@@ -50,13 +50,15 @@
         wp_enqueue_style( 'medeya_slider', get_template_directory_uri().'/bower_components/slick-carousel/slick/slick.css' );
         wp_enqueue_style( 'medeya_font_ionicons', get_template_directory_uri().'/bower_components/Ionicons/css/ionicons.css' );
         wp_enqueue_style( 'medeya_main_font', get_template_directory_uri().'/fonts/calibri/font.css' );
-        wp_enqueue_style( 'medeya_main_style', get_template_directory_uri().'/css/main.css' );        
+        wp_enqueue_style( 'medeya_main_style', get_template_directory_uri().'/css/main.css' );
         wp_enqueue_style( 'medeya_media', get_template_directory_uri().'/css/media.css' );
         wp_enqueue_style( 'medeya_hovers', get_template_directory_uri().'/css/hover.css' );
         wp_enqueue_style( 'medeya_slider_theme', get_template_directory_uri().'/bower_components/slick-carousel/slick/slick-theme.css' );
         wp_enqueue_style( 'medeya_font_awesome', get_template_directory_uri().'/bower_components/font-awesome/css/font-awesome.css' );
         wp_enqueue_style( 'medeya_f_grid', get_template_directory_uri().'/css/f-grid.css' );
         wp_enqueue_style( 'medeya_fancybox', get_template_directory_uri().'/bower_components/fancybox/dist/jquery.fancybox.min.css' );
+        wp_enqueue_style( 'medeya_select2', get_template_directory_uri().'/libs/select2/dist/css/select2.css' );
+
 
         // js
         wp_enqueue_script( 'medeya_jquery', get_template_directory_uri().'/bower_components/jquery/dist/jquery.js' );
@@ -71,6 +73,7 @@
         wp_enqueue_script( 'medeya_js_google-map', get_template_directory_uri().'/js/google-map.js' );
         wp_enqueue_script( 'medeya_js_sliding_line', get_template_directory_uri().'/libs/sliding-line/menu.sliding.line.js' );
         wp_enqueue_script( 'medeya_js_fancybox', get_template_directory_uri().'/bower_components/fancybox/dist/jquery.fancybox.min.js' );
+        wp_enqueue_script( 'medeya_js_select2', get_template_directory_uri().'/libs/select2/dist/js/select2.min.js' );
     }
     add_action( 'wp_enqueue_scripts', 'medeya_load_resources' );
 ?>
