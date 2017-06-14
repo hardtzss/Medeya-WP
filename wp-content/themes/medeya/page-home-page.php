@@ -10,37 +10,27 @@ Template Name: Home
 <?php while (have_posts()) : the_post(); ?>
 
 	<!-- Main Slider -->
-	<section class="main_slider_wrap">
+	<section class="main_slider_wrap select_pos">
 
-		<form class="select-form">
+		<div class="select_form_wrap">
+			<form class="select-form select-form_color">
 
-            <div class="select-form__inner">
-                <p class="select-form__title">
-                    Title
-                </p>
-                <select class="select select-form__select">
-                    <option class="select__item" value="value">Select item 1</option>
-                    <option class="select__item" value="value">Select item 2</option>
-                    <option class="select__item" value="value">Select item 3</option>
-                </select>
-            </div>
+				<div class="select-form__inner">
+					<p class="select-form__title select-form__title_color">
+						Выбирете врача
+					</p>
+					<select class="select select-form__select">
+						<option class="select__item" value="value">Select item 1</option>
+						<option class="select__item" value="value">Select item 2</option>
+						<option class="select__item" value="value">Select item 3</option>
+					</select>
+				</div>
 
-            <div class="select-form__inner">
-                <p class="select-form__title">
-                    Title
-                </p>
-
-                <select class="select select-form__select">
-                    <option class="select__item" value="value">Select item 1</option>
-                    <option class="select__item" value="value">Select item 2</option>
-                    <option class="select__item" value="value">Select item 3</option>
-                </select>
-            </div>
-
-            <div class="select-form__inner">
-                <button class="select-form__btn" type="submit">Button</button>
-            </div>
-        </form>
+				<div class="select-form__inner">
+					<button class="select-form__btn" type="submit">Записать</button>
+				</div>
+			</form>
+		</div>
 
 		<?php if( have_rows('main_slider_repeater') ): ?>
 			<div id="main_slider" class="main_slider">

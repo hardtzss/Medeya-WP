@@ -1089,14 +1089,19 @@ div.wpcf7-response-output {
     21. Select 2
 ========================================*/
 /* Select Form */
+.select_form_wrap {
+    position: absolute;
+    top: 25%;
+    right: 100px;
+    z-index: 100;
+}
 .select-form {
 	background-color: #DEDEDE;
-	max-width: 350px;
-	padding: 20px;
+	width: 300px;
+	padding: 30px 20px;
 }
-.select {}
 .select-form__inner {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .select-form__title {
 	font-size: 20px;
@@ -1104,19 +1109,35 @@ div.wpcf7-response-output {
 }
 .select-form__select {}
 .select-form__btn {
+    width: 100%;
 	display: block;
 	background-color: #fff;
-	padding: 10px;
+    color: #444;
+	padding: 12px;
 	font-size: 16px;
 	margin: 0 auto;
 }
-.select__item {}
+    /*Modificator*/
+.select-form_color {
+    background-color: rgba(69, 117, 189, 0.9);
+}
+.select-form__inner_mb {
+    margin-bottom: 30px;
+}
+.select-form__title_color {
+    color: #fff;
+}
 
 
 /* Custom Select */
+.select_pos {
+    position: relative;
+}
 .select2-container--default
 .select2-selection--single {
     height: 40px;
+    border-radius: initial;
+    border: none;
 }
 .select2-container--default
 .select2-selection--single
@@ -1142,9 +1163,4 @@ div.wpcf7-response-output {
 .select2-selection--single
 .select2-selection__arrow b {
     border-color: transparent transparent #888 transparent;
-}
-.select2-container--default
-.select2-selection--single {
-    border: 1px solid #aaa;
-    border-radius: 4px;
 }
