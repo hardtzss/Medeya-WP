@@ -27,7 +27,7 @@ Template Name: Home
 				</div>
 
 				<div class="select-form__inner">
-					<button class="select-form__btn" type="submit">Записать</button>
+					<button class="select-form__btn trans" type="submit">Записать</button>
 				</div>
 			</form>
 		</div>

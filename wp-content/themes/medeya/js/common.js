@@ -9,7 +9,15 @@ $(function() {
 		dots: true,
 		// fade: true,
 		pauseOnHover: false,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 640,
+			settings: {
+	    		unslick: true
+	  		}
+    	}
+	]
 	});
 
 	// Services Slider

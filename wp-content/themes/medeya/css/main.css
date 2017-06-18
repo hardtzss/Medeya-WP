@@ -923,6 +923,10 @@ div.wpcf7-response-output {
     width: 50%;
     float: left;
 }
+.serv_price {
+    text-align: right;
+    padding-right: 15px;
+}
 .price_list_line {
     padding: 10px;
     border-bottom: 1px solid #dedede;
@@ -1107,15 +1111,18 @@ div.wpcf7-response-output {
 	font-size: 20px;
 	margin-bottom: 5px;
 }
-.select-form__select {}
 .select-form__btn {
     width: 100%;
 	display: block;
-	background-color: #fff;
-    color: #444;
+	background-color: #3EB8D7;
+    color: #fff;
 	padding: 12px;
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0 auto;
+    font-weight: bold;
+}
+.select-form__btn:hover {
+    background-color: #51cbea;
 }
     /*Modificator*/
 .select-form_color {
