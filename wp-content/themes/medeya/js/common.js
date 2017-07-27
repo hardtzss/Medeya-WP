@@ -3,7 +3,7 @@ $(function() {
 	// Main Slider
 	$('#main_slider').slick({
 		infinite: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000,
 		speed: 1000,
 		dots: true,
@@ -14,7 +14,9 @@ $(function() {
 		{
 			breakpoint: 640,
 			settings: {
-	    		unslick: true
+	    		unslick: true,
+				dots: false,
+				autoplay: true
 	  		}
     	}
 	]
@@ -123,6 +125,11 @@ $(function() {
 
 	// Select 2
 	$('.select-form__select').select2();
+
+	// Mach Height
+	$('.slide_inner').matchHeight(options);
+	$('.review_item').matchHeight(options);
+	$('.doctor_content_wrap').matchHeight(options);
 
 
 

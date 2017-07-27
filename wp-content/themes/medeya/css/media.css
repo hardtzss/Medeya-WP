@@ -1,9 +1,9 @@
 /* XXLarge screens, min-width 1921px, xxlarge screens */
-@media only screen and (min-width: 120.063em) { } 
+@media only screen and (min-width: 120.063em) { }
 
 
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues  */
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
 
 
 /* XLarge screens, min-width 1441px, xlarge screens */
@@ -18,7 +18,7 @@
 @media only screen and (min-width: 64.063em) { }
 
 /* max-width 1024px */
-@media only screen and (max-width: 64em) { 
+@media only screen and (max-width: 64em) {
     .top_contacts_wrap {
         display: none;
     }
@@ -65,6 +65,13 @@
         text-align: center;
         width: 100%;
     }
+    .slider_content_wrap {
+        display: none;
+    }
+    .select_form_wrap {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 /* max-width 641 */
 @media only screen and (max-width: 40.063em) {
@@ -93,9 +100,19 @@
         line-height: 36px;
         font-size: 13px;
     }
+    .select-form_pos {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        bottom: 70px;
+        z-index: 2;
+    }
+    .select-form__inner_input {
+        margin-bottom: 20px;
+    }
 }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 }
 
@@ -110,18 +127,3 @@
 
 /* Small screens, Define mobile styles */
 @media only screen { }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

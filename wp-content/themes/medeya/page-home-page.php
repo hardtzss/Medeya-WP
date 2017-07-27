@@ -9,16 +9,22 @@ Template Name: Home
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-	<!-- Main Slider -->
-	<section class="main_slider_wrap select_pos">
+	<!-- Main Section -->
+	<section style="background-image: url('<?php the_field('main_section_bg'); ?>')" class="select_section cover">
+		<div class="row">
+			<div class="columns small-12 medium-4 large-4">
+				<div class="main_title_box">
+					<h1 class="main_title"><?php the_field('main_section_title'); ?></h1>
+					<p class="main_title_descr">lorem insum dolor alei consvare</p>
+				</div>
+			</div>
 
-		<div class="select_form_wrap">
-			<form class="select-form select-form_color">
+			<form class="select-form select-form_color select-form_pos clear_fix">
 
-				<div class="select-form__inner">
-					<p class="select-form__title select-form__title_color">
+				<div class="select-form__inner select-form__inner_input fl_l">
+					<!-- <p class="select-form__title select-form__title_color">
 						Выбирете врача
-					</p>
+					</p> -->
 					<select class="select select-form__select">
 						<option class="select__item" value="value">Select item 1</option>
 						<option class="select__item" value="value">Select item 2</option>
@@ -26,12 +32,34 @@ Template Name: Home
 					</select>
 				</div>
 
-				<div class="select-form__inner">
+				<div class="select-form__inner fl_l">
 					<button class="select-form__btn trans" type="submit">Записать</button>
 				</div>
 			</form>
-		</div>
+			<!-- Modal -->
+			<div class="modal">
+				<p class="modal__text">Для записи на прием, используйте аккаунт сервиса skrymed.com</p>
+				<a href="#" class="modal__btn trans">Войти</a>
+				<p class="modal__text">Нет аккаунта?</p>
+				<p class="modal__text">Пройдите бесплатную
+					<a href="#" class="modal__link">регистрацию</a>
+				</p>
+			</div>
+			<!-- Modal -->
 
+			<!-- Modal -->
+			<div class="modal">
+				<p class="modal__text">Вы записаны на прием. Детали смотрите на сайте www.skrymed.com</p>
+				<a href="#" class="modal__btn trans">Спасибо</a>
+			</div>
+			<!-- Modal -->
+
+		</div>
+	</section>
+	<!-- Main Section End -->
+
+	<!-- Main Slider -->
+	<!-- <section class="main_slider_wrap select_pos">
 		<?php if( have_rows('main_slider_repeater') ): ?>
 			<div id="main_slider" class="main_slider">
 				<?php while( have_rows('main_slider_repeater') ): the_row();
@@ -58,7 +86,7 @@ Template Name: Home
 			</div>
 		<?php endif; ?>
 
-	</section>
+	</section> -->
 	<!-- Main Slider End -->
 
 	<!-- Medical Clinic -->
@@ -175,7 +203,7 @@ Template Name: Home
                                     </div>
                                     <div class="doctor_content_wrap">
                                         <a href="<?php the_permalink(); ?>" class="doc_link">
-                                            <div class="item_title"><?php the_field('p_doc_name'); ?></div>
+                                            <div class="item_title item_title_home"><?php the_field('p_doc_name'); ?></div>
                                         </a>
                                         <div class="item_subtitle"><?php the_field('p_doc_spec'); ?></div>
                                     </div>

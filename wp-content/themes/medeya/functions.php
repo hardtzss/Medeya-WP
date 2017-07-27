@@ -74,6 +74,7 @@
         wp_enqueue_script( 'medeya_js_sliding_line', get_template_directory_uri().'/libs/sliding-line/menu.sliding.line.js' );
         wp_enqueue_script( 'medeya_js_fancybox', get_template_directory_uri().'/bower_components/fancybox/dist/jquery.fancybox.min.js' );
         wp_enqueue_script( 'medeya_js_select2', get_template_directory_uri().'/libs/select2/dist/js/select2.min.js' );
+        wp_enqueue_script( 'medeya_js_machheight', get_template_directory_uri().'/libs/mach-height/jquery.matchHeight.js' );
     }
     add_action( 'wp_enqueue_scripts', 'medeya_load_resources' );
 ?>

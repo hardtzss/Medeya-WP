@@ -135,7 +135,10 @@ a {
 }
 .item_title {
 	color: #3065B5;
-	font-size: 24px;
+	font-size: 22px;
+}
+.item_title_home {
+    font-size: 20px;
 }
 .item_subtitle {
 	color: #333;
@@ -322,6 +325,11 @@ h4, h5, h6 {
 .mobile_main_menu_item > a:hover {
     background-color: rgba(170, 221, 255, 0.5);
 }
+/*Main Section*/
+.select_section {
+    background-color: #adf;
+    height: 600px;
+}
 /*======================================
     04. Main Slider
 ========================================*/
@@ -340,6 +348,9 @@ h4, h5, h6 {
     font-size: 34px;
     text-transform: initial;
     line-height: 1.1;
+}
+.mobile_first_section {
+    height: 70vh;
 }
 
 /*======================================
@@ -454,6 +465,7 @@ h4, h5, h6 {
 	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(222,222,222,1);
 	-moz-box-shadow: inset 0px 0px 1px 1px rgba(222,222,222,1);
 	box-shadow: inset 0px 0px 1px 1px rgba(222,222,222,1);
+    text-align: center;
 }
 .docs_m {
     margin-bottom: 30px;
@@ -1092,31 +1104,57 @@ div.wpcf7-response-output {
 /*======================================
     21. Select 2
 ========================================*/
-/* Select Form */
-.select_form_wrap {
+.select_section {
+    position: relative;
+}
+.select_section::after {
     position: absolute;
-    top: 25%;
-    right: 100px;
-    z-index: 100;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 64, 112, 0.2));
+}
+.main_title_box {
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    transform: translateY(-50%);
+}
+.main_title {
+    line-height: 1.2;
+    text-transform: inherit;
+    font-weight: 100;
+}
+.main_title_descr {
+    font-size: 18px;
+}
+.select-form_pos{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 }
 .select-form {
-	background-color: #DEDEDE;
-	width: 300px;
-	padding: 30px 20px;
-}
-.select-form__inner {
-	margin-bottom: 20px;
+	/*background-color: #DEDEDE;*/
+	/*padding: 20px;*/
+    border-radius: 2px;
 }
 .select-form__title {
 	font-size: 20px;
 	margin-bottom: 5px;
 }
 .select-form__btn {
-    width: 100%;
+    width: 150px;
 	display: block;
 	background-color: #3EB8D7;
     color: #fff;
-	padding: 12px;
+	padding: 11px;
 	font-size: 18px;
 	margin: 0 auto;
     font-weight: bold;
@@ -1126,7 +1164,7 @@ div.wpcf7-response-output {
 }
     /*Modificator*/
 .select-form_color {
-    background-color: rgba(69, 117, 189, 0.9);
+    /*background-color: rgba(0, 0, 0, .5);*/
 }
 .select-form__inner_mb {
     margin-bottom: 30px;
@@ -1170,4 +1208,47 @@ div.wpcf7-response-output {
 .select2-selection--single
 .select2-selection__arrow b {
     border-color: transparent transparent #888 transparent;
+}
+.select-form__inner .select2 {
+    min-width: 200px !important;
+}
+/*Модалки*/
+.modal {
+    display: none;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #00a5cf;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 2px;
+}
+.modal__text {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.modal__btn {
+    display: block;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #006478;
+    color: #fff;
+    margin-bottom: 10px;
+    margin: 15px auto;
+}
+.modal__btn:hover {
+    background-color: #0a788e;
+}
+.modal__link  {
+    font-size: 18px;
+    color: #006478;
+    display: inline-block;
+}
+.modal__link:hover {
+    text-decoration: underline;
 }
